@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prueba Firebase</title>
+</head>
+
+<body>
+    <h1>Prueba de Reserva</h1>
+    <button id="reservarBtn">Reservar Clase</button>
+
+    <script type="module">
+        // Importar Firebase
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js";
+        import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
+
+        // Configuración (usá tu config real aquí)
+        const firebaseConfig = {
+            apiKey: "AIzaSyDePBf0rdq1Oq-kVSAect-8QHUzbypruIg",
+            authDomain: "sistemareservasgimnasio.firebaseapp.com",
+            projectId: "sistemareservasgimnasio",
+            storageBucket: "sistemareservasgimnasio.firebasestorage.app",
+            messagingSenderId: "971351696221",
+            appId: "1:971351696221:web:c37cf4a86e847ab6983eb4"
+        };
+
+        // Inicializar
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const auth = getAuth(app);
+
+        const reservarBtn = document.getElementById("reservarBtn");
+
+        onAuthStateChanged(auth, async (user) => {
+            if (user) {
+                console.log("Usuario autenticado:", user.email);
+
+                reservarBtn.addEventListener("click", async () => {
+                    try {
+                        const docRef = await addDoc(collection(db, "reservasTest"), {
+                            usuario: user.email,
+                            dia: "lunes",
+                            hora: "10:00",
+                            nombre: "Yoga Test",
+                            timestamp: new Date()
+                        });
+
+                        alert("Reserva guardada con ID: " + docRef.id);
+                    } catch (error) {
+                        console.error("Error al guardar la reserva:", error);
+                    }
+                });
+
+            } else {
+                alert("Iniciá sesión para hacer una reserva.");
+            }
+        });
+    </script>
+</body>
+
+</html>
