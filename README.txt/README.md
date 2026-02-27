@@ -1,6 +1,6 @@
 ﻿# TurnFit 🏋️‍♂️
 
-![Vista previa de TurnFit](Capturas/Captura de pantalla 2025-10-24 145820.png)
+![Vista previa de TurnFit](./Capturas/Captura de pantalla 2025-10-24 145820.png)
 
 
 
@@ -24,5 +24,6 @@
 ## 📸 Captura del sistema
 
 ![Captura de pantalla](assets/Imagenes/turnfit-preview.png)
+
 
 
