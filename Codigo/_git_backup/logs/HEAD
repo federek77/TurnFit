@@ -1,0 +1,12 @@
+0000000000000000000000000000000000000000 599276f54908b632a165b1ed836878c2f76d2718 federek77 <128642744+federek77@users.noreply.github.com> 1752849830 -0300	commit (initial): Primer commit - subida inicial
+599276f54908b632a165b1ed836878c2f76d2718 0000000000000000000000000000000000000000 federek77 <128642744+federek77@users.noreply.github.com> 1752849845 -0300	Branch: renamed refs/heads/master to refs/heads/main
+0000000000000000000000000000000000000000 599276f54908b632a165b1ed836878c2f76d2718 federek77 <128642744+federek77@users.noreply.github.com> 1752849845 -0300	Branch: renamed refs/heads/master to refs/heads/main
+599276f54908b632a165b1ed836878c2f76d2718 0000000000000000000000000000000000000000 federek77 <128642744+federek77@users.noreply.github.com> 1752850240 -0300	Branch: renamed refs/heads/main to refs/heads/main
+599276f54908b632a165b1ed836878c2f76d2718 599276f54908b632a165b1ed836878c2f76d2718 federek77 <128642744+federek77@users.noreply.github.com> 1752850240 -0300	Branch: renamed refs/heads/main to refs/heads/main
+599276f54908b632a165b1ed836878c2f76d2718 34edffb906e852c667ef41477409226e69b90ac5 federek77 <128642744+federek77@users.noreply.github.com> 1752855283 -0300	commit: Agregué README
+34edffb906e852c667ef41477409226e69b90ac5 17eb2e6da88ab94393b425dcef74f32289bbd90d federek77 <128642744+federek77@users.noreply.github.com> 1752856394 -0300	commit: Agregada licencia correctamente y actualizado README
+17eb2e6da88ab94393b425dcef74f32289bbd90d f2f2beb9432edc6d3eb7346f8478d64f925b278e federek77 <128642744+federek77@users.noreply.github.com> 1752857217 -0300	commit: Agregada imagen de vista previa en el README
+f2f2beb9432edc6d3eb7346f8478d64f925b278e 8a99ad81356c6cf51efb6f46e40390165ab75320 federek77 <128642744+federek77@users.noreply.github.com> 1752858217 -0300	commit: Agrego imagen del proyecto
+8a99ad81356c6cf51efb6f46e40390165ab75320 7620d251fea026cd53602fa352a76b122d1629ce federek77 <128642744+federek77@users.noreply.github.com> 1752859143 -0300	commit: Corrijo ruta de la imagen en README
+7620d251fea026cd53602fa352a76b122d1629ce f887763c840f95925fc9aae6fa494ce2b1ceadbb federek77 <128642744+federek77@users.noreply.github.com> 1752859370 -0300	commit: Corrijo ruta de la imagen en README
+f887763c840f95925fc9aae6fa494ce2b1ceadbb b5b77d556937bd270b77d629122c9b2a0da618bd federek77 <128642744+federek77@users.noreply.github.com> 1753234958 -0300	commit: Remover config.js del control de versiones

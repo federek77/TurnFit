@@ -1,0 +1,363 @@
+/* === Estilo global del sitio === */
+body {
+    background-image: url('../assets/imagenes/FondoFit.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+/* Estructura principal */
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    position: relative;
+}
+
+header .d-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+/* Centra el header en columna */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+/* Centra la barra de navegación */
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#logo-gimnasio {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+/* TÍTULO */
+header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* NAVBAR */
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.navbar-container .nav-link,
+.navbar-nav a {
+    color: white !important;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav a:hover {
+    text-decoration: underline;
+    color: #a0d2ff;
+}
+
+/* MAIN */
+main.container {
+    padding: 0rem;
+}
+
+/* CONTENEDOR GLASS */
+.main-content {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 2px;
+    padding: 2rem 2.5rem;
+    margin: 2rem auto;
+    max-width: 1500px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+}
+
+/* BOTONES */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+    min-width: 120px;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    align-self: center;
+    margin-bottom: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* FORMULARIOS */
+#registerForm input,
+#loginForm input {
+    width: 100%;
+    max-width: 300px;
+    margin: 0.5rem auto;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    color: white;
+    background: rgba(70, 68, 68, 0.6);
+    backdrop-filter: blur(5px);
+    margin-top: auto;
+}
+
+/* === CONTENEDOR DE CLASES / ACTIVIDADES === */
+#clases-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* === TARJETA DE CLASE === */
+.clase-card {
+    backdrop-filter: blur(10px);
+    background: rgba(35, 35, 35, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(127, 127, 127, 0.4);
+    padding: 6px 8px !important;
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    text-align: center;
+    max-width: 140px !important;
+    font-size: 0.8rem !important;
+    margin: 0 auto !important;
+}
+
+.clase-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+.clase-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.clase-card h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #f0f0f0;
+}
+
+.clase-card p {
+    margin: 8px 0;
+    font-size: .9rem;
+    color: #ccc;
+}
+
+.glass-form {
+    max-width: 4000px;
+}
+
+/* Achica los botones dentro de la tarjeta */
+.clase-card .btn,
+.clase-card .btn-primary {
+    font-size: 0.75rem !important;
+    padding: 0.2rem 0.6rem !important;
+    min-width: 6px !important;
+}
+
+/* Achica los botones blancos de las clases (list-group-item) */
+.list-group-item.list-group-item-action {
+    font-size: 1rem !important;
+    padding: 0.2rem !important;
+    min-height: 2px !important;
+    max-width: 350px !important;
+    border-radius: 5px !important;
+    margin-bottom: 0.1rem !important;
+    /* Menos espacio debajo del botón blanco */
+    align-self: center !important;
+    text-align: center !important;
+    justify-content: center !important;
+    display: flex !important;
+}
+
+/* Achica el botón azul "Reservar" dentro de cada clase */
+.list-group-item .btn,
+.list-group-item .btn-primary {
+    font-size: 0.75rem !important;
+    padding: 0.2rem 0.6rem !important;
+    min-width: 60px !important;
+    margin-top: 0.1rem !important;
+    /* Menos espacio arriba del botón azul */
+}
+
+/* Efecto glass y colores para el calendario */
+#calendario {
+    background: rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(8px) !important;
+    border-radius: 1rem !important;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+    color: #fff !important;
+    border: none !important;
+    max-width: 800px;
+    min-width: 320px;
+    max-height: 700px;
+    min-height: 320px;
+    margin: 0 auto;
+}
+
+/* Cambia el color de los textos y botones del calendario */
+.fc {
+    color: #fff !important;
+}
+
+.fc-toolbar-title {
+    color: #fff !important;
+}
+
+.fc-button,
+.fc-button-primary {
+    background: #0d6efd !important;
+    border: none !important;
+    color: #fff !important;
+}
+
+.fc-button-active,
+.fc-button-primary:active {
+    background: #0a58ca !important;
+}
+
+/* === MEDIA QUERIES === */
+@media (max-width: 768px) {
+    header .d-flex {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .navbar-container {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    #registerForm input,
+    #loginForm input {
+        width: 90%;
+    }
+
+    .btn-primary {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .scrolling-cards {
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .card {
+        min-width: 250px;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(5px);
+        border: none;
+        border-radius: 1rem;
+        color: white;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s;
+        overflow: hidden;
+    }
+
+    .card:hover {
+        transform: scale(1.03);
+    }
+
+    .card-img-top {
+        height: 180px;
+        object-fit: cover;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        cursor: pointer;
+    }
+
+    .card-description {
+        display: none;
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        transition: all 0.3s ease;
+    }
+
+    .card.open .card-description {
+        display: block;
+    }
+
+
+}
